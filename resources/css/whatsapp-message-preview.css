@@ -1,0 +1,119 @@
+.fwap-preview-container {
+    background: #e5ddd5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.fwap-bubble {
+    background: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 90%;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #111b21;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    transition: background 0.6s, color 0.6s;
+}
+.fwap-bubble.fwap-outgoing {
+    background: #d9fdd3;
+    margin-left: auto;
+    margin-right: 0;
+}
+.fwap-bubble blockquote {
+    border-left: 4px solid rgba(0, 0, 0, 0.1);
+    padding-left: 8px;
+    margin: 4px 0;
+    color: #667781;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+.fwap-bubble ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+    margin: 4px 0;
+}
+.fwap-bubble li {
+    margin: 2px 0;
+}
+.fwap-bubble .fwap-ol {
+    list-style: none;
+    padding-left: 15px;
+}
+.fwap-bubble .fwap-number {
+    font-weight: bold;
+    margin-right: 4px;
+}
+.fwap-tabs {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.fwap-tab {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.6s;
+    color: #667781;
+    background: transparent;
+}
+.fwap-tab.active {
+    background: white;
+    border-color: #d1d5db;
+    color: #111b21;
+}
+.fwap-bubble code {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 1px 4px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    display: inline;
+}
+.fwap-bubble pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85em;
+    overflow-x: auto;
+    margin: 4px 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+    display: inline;
+}
+.fwap-bubble strong pre,
+.fwap-bubble em pre,
+.fwap-bubble del pre {
+    display: inline;
+}
+/* Dark mode */
+.dark .fwap-preview-container {
+    background: #0b141a;
+}
+.dark .fwap-bubble {
+    background: #202c33;
+    color: #e9edef;
+}
+.dark .fwap-bubble.fwap-outgoing {
+    background: #025c4c;
+}
+.dark .fwap-tab.active {
+    background: #202c33;
+    border-color: #374151;
+    color: #e9edef;
+}
+.dark .fwap-tab {
+    color: #8696a0;
+}
+.dark .fwap-bubble code {
+    background: rgba(255, 255, 255, 0.08);
+}
